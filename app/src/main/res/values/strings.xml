@@ -5,4 +5,5 @@
     <string name="lorem_ipsum">Lorem ipsum</string>
     <string name="undefined">undefined</string>
     <string name="temperature_degrees_format">%1$s°</string>
+    <string name="date_text_format">"%1$s, %2$s %3$d"</string>
 </resources>
