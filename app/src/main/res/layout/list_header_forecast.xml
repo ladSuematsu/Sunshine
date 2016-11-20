@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:padding="@dimen/default_margin"
         android:background="@color/colorPrimary"
+        android:gravity="center"
         >
         <TextView android:id="@+id/current_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_toStartOf="@id/weather_condition"
-            android:layout_toLeftOf="@id/weather_condition"
             android:textAppearance="@style/AppTheme.TextAppearance.Small.Inverse"
             android:text="@string/date_text_format"
             />
@@ -24,11 +20,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/current_date"
             android:layout_alignStart="@+id/current_date"
-            android:layout_alignEnd="@id/current_date"
-            android:layout_alignRight="@id/current_date"
+            android:layout_alignLeft="@id/current_date"
             android:textAppearance="@style/AppTheme.TextAppearance.Huge.Inverse"
             android:layout_marginTop="@dimen/default_margin"
             android:layout_marginBottom="10dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
             />
 
         <TextView android:id="@+id/min_temperature"
@@ -46,6 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/weather_condition"
+            android:layout_below="@id/current_date"
             android:layout_alignStart="@id/weather_condition"
             android:layout_alignLeft="@id/weather_condition"
             android:layout_alignEnd="@id/weather_condition"
@@ -57,8 +55,9 @@
             android:text="@string/undefined"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
             android:layout_alignTop="@id/min_temperature"
+            android:layout_toEndOf="@id/max_temperature"
+            android:layout_toRightOf="@id/max_temperature"
             android:textAppearance="@style/AppTheme.TextAppearance.Medium.Inverse"
             />
     </RelativeLayout>

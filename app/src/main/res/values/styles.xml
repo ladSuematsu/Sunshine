@@ -33,4 +33,8 @@
         <item name="android:textColor">@color/textColorPrimaryInverse</item>
     </style>
 
+    <style name="AppTheme.TextAppearance.Transparent" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/transparent</item>
+    </style>
+
 </resources>
