@@ -14,13 +14,11 @@ import ladsoft.com.sunshine.databinding.ListItemForecastBinding;
 
 public class ForecastAdapter<T extends Object> extends RecyclerView.Adapter<ForecastAdapter.ForecastViewholder> {
 
-    private final Resources resources;
     private final LayoutInflater inflater;
     private List<T> dataSource;
 
-    public ForecastAdapter(LayoutInflater inflater, Resources resources) {
+    public ForecastAdapter(LayoutInflater inflater) {
         this.inflater = inflater;
-        this.resources = resources;
         this.dataSource = new ArrayList<>();
     }
 
